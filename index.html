@@ -1,18 +1,246 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <title>Bootstrap Website Tutorial</title>
+  <title>Website Index</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  
+<style>
 
-  </style>
+
+
+</style>
+
+
 </head>
 <body>
+	<!--reference to the inherit classes to bootstrap -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<!--we are going to use three span bars for the mobile navigation menu ~10 minutes-->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"> </span>
+					<span class="icon-bar"> </span>
+					<span class="icon-bar"> </span>
+				</button>
+				<!--creating a link
+				//add link to href at # index.html... change image-->
+				<a class="navbar-brand" href="#"><img style="height: 100%; width: 50%" src="img/RoundcountLogo.png"></a>
+			</div>
+			
+			<!--unordered list for navigation items ~13 min-->
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<!--we want these to display on the right hand side-->
+				<ul class="nav navbar-nav navbar-right">
+					<!--be sure to add a link..... what is class active? ~14min-->
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="include/Resume-Michael_Roundcount.pdf" target="black">Resume</a></li>
+					<li><a href="cssSamples.html">CSS Samples</a></li>
+					<li><a href="jquerySamples.html">jQuery Samples</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--carousel image slider-->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class"active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+			<img src="img/mountains.png">
+				<div class="carousel-caption">
+					<h1>get to know me</h1>
+					<br/>
+					<button type="button" class="btn btn-default"><a href="about.html">Check it out</a></button>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/snow.png">
+			</div>
+			<div class="item">
+				<img src="img/red.png">
+			</div>
+		</div>
+		<!--THis is the start of the slider controls -->
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<!-- end of carousel-->	
+
+	<!-- Icons-->
+	<div class="container text-center">
+		<h2>What I am using</h2>
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="img/html5.png" id="icon">
+				<h4>HTML5</h4>				
+			</div>
+			<div class="col-sm-4">
+				<img src="img/bootstrap.png" id="icon">
+				<h4>bootstrap</h4>				
+			</div>
+			<div class="col-sm-4">
+				<img src="img/css3.png" id="icon">
+				<h4>css3</h4>				
+			</div>
+		</div>
+	</div>
+	<!-- End Icons-->
+
+	<!-- Medium size class -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h4>Look at my Dab</h4>
+				<p>The Assyrian came down like the wolf on the fold,
+				And his cohorts were gleaming in purple and gold;
+				And the sheen of their spears was like stars on the sea,
+				When the blue wave rolls nightly on deep Galilee.
+
+				   Like the leaves of the forest when Summer is green,
+				That host with their banners at sunset were seen:
+				Like the leaves of the forest when Autumn hath blown,
+				That host on the morrow lay withered and strown.
+
+				   For the Angel of Death spread his wings on the blast,
+				And breathed in the face of the foe as he passed;
+				And the eyes of the sleepers waxed deadly and chill,
+				And their hearts but once heaved, and for ever grew still!</p>
+				<p>And there lay the steed with his nostril all wide,
+				But through it there rolled not the breath of his pride;
+				And the foam of his gasping lay white on the turf,
+				And cold as the spray of the rock-beating surf.
+
+				   And there lay the rider distorted and pale,
+				With the dew on his brow, and the rust on his mail:
+				And the tents were all silent, the banners alone,
+				The lances unlifted, the trumpet unblown.
+
+				   And the widows of Ashur are loud in their wail,
+				And the idols are broke in the temple of Baal;
+				And the might of the Gentile, unsmote by the sword,
+				Hath melted like snow in the glance of the Lord!</p>
+			</div>
+			<div class="col-md-6">
+				<!-- Use image response class here to keep it on the page -->
+				<img src="img/bootstrap2.jpg" class="img-responsive">
+			</div>
+		</div>
+	</div>
+	<!-- End Medium size class -->
+
+		<!-- mix size class -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<h4>Look at this dog</h4>
+				<p>For the Angel of Death spread his wings on the blast,
+				And breathed in the face of the foe as he passed;
+				And the eyes of the sleepers waxed deadly and chill,
+				And their hearts but once heaved, and for ever grew still!</p>
+
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<!-- Use image response class here to keep it on the page -->
+				<img src="img/tags.png" class="img-responsive">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<h4>Look at this cat</h4>
+				<p>For the Angel of Death spread his wings on the blast,
+				And breathed in the face of the foe as he passed;
+				And the eyes of the sleepers waxed deadly and chill,
+				And their hearts but once heaved, and for ever grew still!</p>
+
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<!-- Use image response class here to keep it on the page -->
+				<img src="img/settings.png" class="img-responsive">
+			</div>
+		</div>
+	</div>
+	<!-- End mix size class -->
+
+
+	<div class="container">
+		<div class="row">
+			<h4><a href="#hidden" data-toggle="collapse">Click for more</a></h4>
+			<div id="hidden" class="collapse">
+				
+				<h4>Look at my Dab</h4>
+
+				<p>The Assyrian came down like the wolf on the fold,
+				And his cohorts were gleaming in purple and gold;
+				And the sheen of their spears was like stars on the sea,
+				When the blue wave rolls nightly on deep Galilee.
+
+				   Like the leaves of the forest when Summer is green,
+				That host with their banners at sunset were seen:
+				Like the leaves of the forest when Autumn hath blown,
+				That host on the morrow lay withered and strown.
+
+				   For the Angel of Death spread his wings on the blast,
+				And breathed in the face of the foe as he passed;
+				And the eyes of the sleepers waxed deadly and chill,
+				And their hearts but once heaved, and for ever grew still!</p>
+				<p>And there lay the steed with his nostril all wide,
+				But through it there rolled not the breath of his pride;
+				And the foam of his gasping lay white on the turf,
+				And cold as the spray of the rock-beating surf.
+
+				   And there lay the rider distorted and pale,
+				With the dew on his brow, and the rust on his mail:
+				And the tents were all silent, the banners alone,
+				The lances unlifted, the trumpet unblown.
+
+				   And the widows of Ashur are loud in their wail,
+				And the idols are broke in the temple of Baal;
+				And the might of the Gentile, unsmote by the sword,
+				Hath melted like snow in the glance of the Lord!</p>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="container-fluid text-center">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3>Contact Me</h3>
+				<br/>
+				<h4>Phone: (636) 866-8195</h4>
+			</div>
+			<!-- using font awesome-->
+			<div class="col-sm-4">
+				<h3>Connect</h3>
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-google"></a>
+				<a href="https://www.linkedin.com/in/michael-roundcount-a127347a/" target="blank" class="fa fa-linkedin"></a>
+			</div>
+
+			<div class="col-sm-4">
+				<img style="height: 50%; width: 50%" src="img/footer.png" class="icon" >
+					
+			</div>
+		</div>
+	</footer>
 
 </body>
 </html>
