@@ -55,7 +55,6 @@ button{
 }
 
 
-
 .calculator {
   position: relative;
   display: block-inline;
@@ -99,6 +98,7 @@ button{
 .calc-row div:hover{
   background: yellow;
   font-weight: bold;
+  cursor: cell;
 }
 
 .calc-row div.zero {
@@ -107,7 +107,10 @@ button{
 }
 
 
-
+.grabbing {
+  cursor: -webkit-grabbing; 
+  cursor: grabbing;
+}
 
 
 footer {

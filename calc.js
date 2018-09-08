@@ -35,7 +35,7 @@ $(document).ready(function() {
       currentEntry = operate(prevEntry, currentEntry, operation);
       operation = null;
       var t1 = performance.now();
-      alert("It took " + (t1 - t0) + " milliseconds to solve your problem.");
+      document.getElementById("demo").innerHTML = ("It took " + (t1 - t0) + "ms to solve your problem.");
     }
     updateScreen(currentEntry);
   });

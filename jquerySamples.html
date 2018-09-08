@@ -25,138 +25,145 @@
 </head>
 <body>
 <nav class="navbar navbar-inverse">
-<div class="container-fluid">
-	<div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			<span class="icon-bar"> </span>
-			<span class="icon-bar"> </span>
-			<span class="icon-bar"> </span>
-		</button>
-	</div>
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"> </span>
+				<span class="icon-bar"> </span>
+				<span class="icon-bar"> </span>
+			</button>
+		</div>
 
-	<div class="collapse navbar-collapse" id="myNavbar">
-		<ul class="nav navbar-nav navbar-right">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="include/Resume-Michael_Roundcount.pdf" target="black">Resume</a></li>
-			<li><a href="cssSamples.html">CSS Samples</a></li>
-			<li class="active"><a href="jquerySamples.html">jQuery Samples</a></li>
-		</ul>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="include/Resume-Michael_Roundcount.pdf" target="black">Resume</a></li>
+				<li><a href="cssSamples.html">CSS Samples</a></li>
+				<li class="active"><a href="jquerySamples.html">jQuery Samples</a></li>
+			</ul>
+		</div>
 	</div>
-</div>
 </nav>
 
 
 <div class="container">
-<div class="row">
-	<div class="col-md-6">
-
-		<div class="calculator">
-			<div class="calc-row">
-				<div class="screen">0123456789</div>
-			</div>
-
-			<div class="calc-row">
-				<div class="button">C</div>
-				<div class="button plus-minus">+/-</div>
-				<div class="button root">sqrt</div>
-				<div class="button divice">/</div>
-			</div>
-
-			<div class="calc-row">
-				<div class="button">7</div>
-				<div class="button">8</div>
-				<div class="button">9</div>
-				<div class="button multiply">*</div>
-			</div>
-
-			<div class="calc-row">
-				<div class="button">4</div>
-				<div class="button">5</div>
-				<div class="button">6</div>
-				<div class="button">-</div>
-			</div>
-
-			<div class="calc-row">
-				<div class="button">1</div>
-				<div class="button">2</div>
-				<div class="button">3</div>
-				<div class="button">+</div>
-			</div>
-
-			<div class="calc-row">
-				<div class="button zero">0</div>
-				<div class="button decimal">.</div>
-				<div class="button equal">=</div>
-			</div>
-		</div>
-
-	</div>
-	<div class="col-md-6">
-		<div class="toggler">
-			<div id="effect" class="ui-widget-content ui-corner-all">
-				<h3 class="ui-widget-header ui-corner-all">Hide</h3>
-				<p>Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.</p>
-			</div>
-		</div>
-
-		<select name="effects" id="effectTypes">
-			<option value="blind">Blind</option>
-			<option value="bounce">Bounce</option>
-			<option value="clip">Clip</option>
-			<option value="drop">Drop</option>
-			<option value="explode">Explode</option>
-			<option value="fade">Fade</option>
-			<option value="fold">Fold</option>
-			<option value="highlight">Highlight</option>
-			<option value="puff">Puff</option>
-			<option value="pulsate">Pulsate</option>
-			<option value="scale">Scale</option>
-			<option value="shake">Shake</option>
-			<option value="size">Size</option>
-			<option value="slide">Slide</option>
-		</select>
-		<button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
-	</div>
-</div>
-
-
-
-<div class="container">
 	<div class="row">
 		<div class="col-md-6">
-			<h1> Drag </h1>
-			<div id="draggable" class="ui-widget-content">
-				<p>Drag me around</p>
+
+			<div class="calculator" style="min-height: 1em;">
+				<div class="calc-row">
+					<div class="screen">0123456789</div>
+				</div>
+
+				<div class="calc-row">
+					<div class="button">C</div>
+					<div class="button plus-minus">+/-</div>
+					<div class="button root">sqrt</div>
+					<div class="button divice">/</div>
+				</div>
+
+				<div class="calc-row">
+					<div class="button">7</div>
+					<div class="button">8</div>
+					<div class="button">9</div>
+					<div class="button multiply">*</div>
+				</div>
+
+				<div class="calc-row">
+					<div class="button">4</div>
+					<div class="button">5</div>
+					<div class="button">6</div>
+					<div class="button">-</div>
+				</div>
+
+				<div class="calc-row">
+					<div class="button">1</div>
+					<div class="button">2</div>
+					<div class="button">3</div>
+					<div class="button">+</div>
+				</div>
+
+				<div class="calc-row">
+					<div class="button zero">0</div>
+					<div class="button decimal">.</div>
+					<div class="button equal">=</div>
+				</div>
 			</div>
+
 		</div>
 		<div class="col-md-6">
-			<p>Date: <input type="text" id="datepicker"></p>
-		</div>
-	</div>
-</div>
+			<div class="toggler">
+				<div id="effect" class="ui-widget-content ui-corner-all">
+					<div class="ui-widget-header ui-corner-all" style="max-height: 70px">
+						<h3>Hide</h3>
+						<p>Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.</p>
+					</div>
+				</div>
+			</div>
 
+			<select name="effects" id="effectTypes">
+				<option value="blind">Blind</option>
+				<option value="bounce">Bounce</option>
+				<option value="clip">Clip</option>
+				<option value="drop">Drop</option>
+				<option value="explode">Explode</option>
+				<option value="fade">Fade</option>
+				<option value="fold">Fold</option>
+				<option value="highlight">Highlight</option>
+				<option value="puff">Puff</option>
+				<option value="pulsate">Pulsate</option>
+				<option value="scale">Scale</option>
+				<option value="shake">Shake</option>
+				<option value="size">Size</option>
+				<option value="slide">Slide</option>
+			</select>
+			<button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
 
-<footer class="container-fluid text-center">
-	<div class="row">
-		<div class="col-sm-4">
-			<h3>Contact Me</h3>
 			<br/>
-			<h4>Phone: (636) 866-8195</h4>
-		</div>
-		<div class="col-sm-4">
-			<h3>Connect</h3>
-			<a href="#" class="fa fa-facebook"></a>
-			<a href="#" class="fa fa-twitter"></a>
-			<a href="#" class="fa fa-google"></a>
-			<a href="https://www.linkedin.com/in/michael-roundcount-a127347a/" target="blank" class="fa fa-linkedin"></a>
-		</div>
-
-		<div class="col-sm-4">
-			<img style="height: 50%; width: 50%" src="img/footer.png" class="icon" >
+			<br/>
+			<br/>
+			<br/>
+			<h1 id="demo"> Do math or hide the text for perfomrance time</h1>
 		</div>
 	</div>
-</footer>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h1> Drag </h1>
+				<div id="draggable" class="ui-widget-content">
+					<img style="height: 75%; width: 75%;" src="img/dragIcon.jpg" class="grabbing" >
+				</div>
+			</div>
+			<div class="col-md-6">
+				<p>Date: <input type="text" id="datepicker"></p>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="container-fluid text-center">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3>Contact Me</h3>
+				<br/>
+				<h4>Phone: (636) 866-8195</h4>
+			</div>
+			<div class="col-sm-4">
+				<h3>Connect</h3>
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-google"></a>
+				<a href="https://www.linkedin.com/in/michael-roundcount-a127347a/" target="blank" class="fa fa-linkedin"></a>
+			</div>
+
+			<div class="col-sm-4">
+				<img style="height: 40%; width: 40%" src="img/footer.png" class="icon" >
+			</div>
+		</div>
+	</footer>
 
 
 </body>

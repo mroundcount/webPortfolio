@@ -31,8 +31,9 @@ $( "#button" ).on( "click", function() {
   var t0 = performance.now();
   runEffect();
   var t1 = performance.now();
-  console.log("It took " + (t1 - t0) + " milliseconds to complete.");
+  document.getElementById("demo").innerHTML = ("It took " + (t1 - t0) + "ms to hide the text.");
 });
+
 });
 
 
