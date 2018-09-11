@@ -4,10 +4,7 @@ $(document).ready(function() {
   var operation = null;
   var currentEntry = '0';
 
-  var t0 = performance.now();
-
   updateScreen(result);
-
 
   $('.button').on('click', function(evt) {
     var buttonPressed = $(this).html();
@@ -30,12 +27,13 @@ $(document).ready(function() {
     } else if (isOperator(buttonPressed)) {
       prevEntry = parseFloat(currentEntry);
       operation = buttonPressed;
-      currentEntry = '';
+      currentEntry = buttonPressed;
     } else if (buttonPressed === '=') {
+      var t0 = performance.now();
       currentEntry = operate(prevEntry, currentEntry, operation);
       operation = null;
       var t1 = performance.now();
-      document.getElementById("demo").innerHTML = ("It took " + (t1 - t0) + "ms to solve your problem.");
+      document.getElementById("demo").innerHTML = ("It took " + (t1 - t0).toFixed(2)  + "ms to solve your problem.");
     }
     updateScreen(currentEntry);
   });

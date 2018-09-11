@@ -51,7 +51,7 @@
 	<div class="row">
 		<div class="col-md-6">
 
-			<div class="calculator" style="min-height: 1em;">
+			<div class="calculator">
 				<div class="calc-row">
 					<div class="screen">0123456789</div>
 				</div>
@@ -93,40 +93,34 @@
 
 		</div>
 		<div class="col-md-6">
-			<div class="toggler">
-				<div id="effect" class="ui-widget-content ui-corner-all">
-					<div class="ui-widget-header ui-corner-all" style="max-height: 70px">
-						<h3>Hide</h3>
-						<p>Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.</p>
-					</div>
-				</div>
+			<div>
+				<select name="effects" id="effectTypes">
+					<option value="blind">Blind</option>
+					<option value="bounce">Bounce</option>
+					<option value="clip">Clip</option>
+					<option value="drop">Drop</option>
+					<option value="explode">Explode</option>
+					<option value="fade">Fade</option>
+					<option value="fold">Fold</option>
+					<option value="highlight">Highlight</option>
+					<option value="puff">Puff</option>
+					<option value="pulsate">Pulsate</option>
+					<option value="scale">Scale</option>
+					<option value="shake">Shake</option>
+					<option value="size">Size</option>
+					<option value="slide">Slide</option>
+				</select>
+				<button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
 			</div>
-
-			<select name="effects" id="effectTypes">
-				<option value="blind">Blind</option>
-				<option value="bounce">Bounce</option>
-				<option value="clip">Clip</option>
-				<option value="drop">Drop</option>
-				<option value="explode">Explode</option>
-				<option value="fade">Fade</option>
-				<option value="fold">Fold</option>
-				<option value="highlight">Highlight</option>
-				<option value="puff">Puff</option>
-				<option value="pulsate">Pulsate</option>
-				<option value="scale">Scale</option>
-				<option value="shake">Shake</option>
-				<option value="size">Size</option>
-				<option value="slide">Slide</option>
-			</select>
-			<button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
-
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<h1 id="demo"> Do math or hide the text for perfomrance time</h1>
+			<div id="toggler">
+				<div id="effect">
+					<h3>Hide</h3>
+					<p>Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.</p>
+				</div>
+			</div>			
 		</div>
 	</div>
+
 
 
 	<div class="container">
@@ -138,33 +132,30 @@
 				</div>
 			</div>
 			<div class="col-md-6">
-				<p>Date: <input type="text" id="datepicker"></p>
+				<h1 id="demo"> Do math or hide the text for performance time</h1>
 			</div>
 		</div>
 	</div>
-
-
-	<footer class="container-fluid text-center">
-		<div class="row">
-			<div class="col-sm-4">
-				<h3>Contact Me</h3>
-				<br/>
-				<h4>Phone: (636) 866-8195</h4>
-			</div>
-			<div class="col-sm-4">
-				<h3>Connect</h3>
-				<a href="#" class="fa fa-facebook"></a>
-				<a href="#" class="fa fa-twitter"></a>
-				<a href="#" class="fa fa-google"></a>
-				<a href="https://www.linkedin.com/in/michael-roundcount-a127347a/" target="blank" class="fa fa-linkedin"></a>
-			</div>
-
-			<div class="col-sm-4">
-				<img style="height: 40%; width: 40%" src="img/footer.png" class="icon" >
-			</div>
+</div>
+<footer class="text-center">
+	<div class="row">
+		<div class="col-sm-4">
+			<h3>Contact Me</h3>
+			<br/>
+			<h4>Phone: (636) 866-8195</h4>
 		</div>
-	</footer>
+		<div class="col-sm-4">
+			<h3>Connect</h3>
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-google"></a>
+			<a href="https://www.linkedin.com/in/michael-roundcount-a127347a/" target="blank" class="fa fa-linkedin"></a>
+		</div>
 
-
+		<div class="col-sm-4">
+			<img style="height: 40%; width: 40%" src="img/footer.png" class="icon" >
+		</div>
+	</div>	
+</footer>
 </body>
 </html>
